@@ -1,0 +1,219 @@
+.create-journal-container {
+  width: 100%;
+  /* background: #ffffff; */
+  position: absolute;
+  left: 0px;
+  top: 0%;
+
+  height: 100%;
+  padding-left: 12.5%;
+  padding-top: 15%;
+  z-index: 1;
+}
+
+.create-journal-div {
+  padding: 67px;
+  background: rgba(255, 255, 255, 0.48);
+  margin-bottom: 40px;
+}
+
+.half-color-block {
+  position: absolute;
+  width: 100%;
+  left: 0px;
+  top: 50vh;
+  min-height: 50vh;
+  background: #ffa43e;
+}
+
+.quarter-color-block-bottom {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 50vh;
+  min-height: 50vh;
+  background: #d98220;
+}
+
+.quarter-color-block-top {
+  position: absolute;
+  width: 50%;
+  left: 50%;
+  top: 0vh;
+  min-height: 50vh;
+  background: #222;
+}
+
+.help-overlay {
+  border: none;
+  position: absolute;
+  width: 100%;
+  min-height: 100vh;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.86);
+  z-index: 10000;
+  transition: fadeIn 1s ease;
+  -webkit-transition: fadeIn 1s ease;
+  -moz-transition: fadeIn 1s ease;
+  -o-transition: fadeIn 1s ease;
+  -ms-transition: fadeIn 1s ease;
+}
+
+.arrow-down {
+  position: absolute;
+  z-index: 10000;
+  width: 70px;
+  height: 70px;
+  background: url('./img/arrow-up.png');
+  background-size: 100% 100%;
+}
+
+.arrow-left {
+  position: absolute;
+  z-index: 10000;
+  width: 70px;
+  height: 70px;
+  background: url('./img/arrow-left.png');
+  background-size: 100% 100%;
+}
+
+.journal-help {
+  right: 30%;
+  top: 284px;
+}
+
+.journal-help-text {
+  position: absolute;
+  right: 17%;
+  top: 242px;
+  color: white;
+  font-size: 24px;
+}
+
+.add-journal-help-text {
+  position: absolute;
+  left: 2.7%;
+  top: 431px;
+  color: white;
+  font-size: 24px;
+}
+
+.add-journal-help-arrow {
+  left: 29%;
+  top: 383px;
+}
+
+.arrow-up {
+  position: absolute;
+  z-index: 10000;
+  width: 70px;
+  height: 70px;
+  background: url('./img/arrow-up-flipped.png');
+  background-size: 100% 100%;
+}
+
+.search-bar-help-arrow {
+  left: 216px;
+  top: 52px;
+}
+
+.search-bar-help-text {
+  position: absolute;
+  left: 304px;
+  top: 95px;
+  color: white;
+  font-size: 24px;
+}
+
+.close-help {
+  color: #bf2d00;
+  font-size: 74px;
+  position: absolute;
+  right: 27px;
+  top: 5px;
+  cursor: pointer;
+  cursor: hand;
+}
+
+.close-help > i:hover {
+  color: red;
+}
+
+@media only screen and (max-height: 700px) {
+  .create-journal-container {
+    height: 100%;
+  }
+
+  .color-block {
+    height: 0%;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .create-journal-container {
+    /* left: 20px; */
+    padding-left: 6%;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .create-journal-container {
+    /* left: 0px;
+    top: 15%; */
+    padding-top: 230px;
+    padding-left: 6%;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .create-journal-container {
+    /* left: 0px;
+    top: 15%; */
+    padding-top: 130px;
+    padding-left: 6%;
+  }
+
+  .create-journal-heading {
+    font-size: 18px;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

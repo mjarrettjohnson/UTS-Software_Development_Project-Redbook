@@ -1,0 +1,119 @@
+.top-search-bar {
+  position: fixed;
+  left: 200px;
+  min-height: 59px;
+  width: 100%;
+  margin-bottom: 2%;
+  /* background: rgb(15, 15, 15); */
+  border-bottom: 1px solid black;
+  /* padding-left: 195px; */
+  z-index: 2;
+  padding-top: 10px;
+  -webkit-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  border-top: 1px solid black;
+  background-color: rgba(255, 255, 255, 0.84);
+}
+
+.top-search-bar > form > div {
+  margin: 8px;
+}
+.top-search-control {
+  background: transparent;
+  border: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  font-size: 28px;
+  margin-left: 20px;
+  width: 122vh;
+  color: #651515;
+}
+
+.top-search-control:hover {
+  background: transparent;
+  box-shadow: none;
+  border: none;
+  outline: 0;
+}
+
+.top-search-control:focus {
+  outline: 0;
+}
+
+.right-corner-container {
+  position: absolute;
+  right: 2%;
+  top: 25%;
+}
+
+.btn-showHidden {
+  background: none;
+  border: none;
+  color: #5de693;
+  min-width: 100%;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.btn-showHidden:hover {
+  color: #f61f1f;
+}
+
+@media only screen and (max-width: 1330px) {
+  .top-search-bar {
+    /* padding-left: 41px; */
+    font-size: 12px;
+    padding-bottom: 5px;
+    padding-top: 6px;
+    min-height: 0px;
+    left: 39px;
+  }
+
+  .top-search-control {
+    width: 100vh;
+    font-size: 22px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .top-search-bar {
+    padding-left: 0px;
+    font-size: 12px;
+    top: 51px;
+    height: 38px;
+    padding-top: 3px;
+    left: 0px;
+    position: fixed;
+    background: white;
+  }
+
+  .top-search-control {
+    width: 85vw;
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .top-search-bar {
+    padding-left: 0px;
+    font-size: 12px;
+    top: 51px;
+    height: 31px;
+    left: 0px;
+  }
+
+  .top-search-control {
+    width: 57vh;
+    font-size: 13px;
+  }
+  .right-corner-container {
+    position: absolute;
+    right: 2%;
+    top: 17%;
+  }
+  .btn-showHidden {
+    font-size: 14px;
+  }
+}

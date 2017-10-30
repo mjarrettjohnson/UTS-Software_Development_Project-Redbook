@@ -1,0 +1,169 @@
+.help-block-error {
+  color: #c80a06 !important;
+  font-size: 16px;
+}
+
+.page-wrapper {
+  -webkit-animation: fadein 1s; /* Safari, Chrome and Opera > 12.1 */
+  -moz-animation: fadein 1s; /* Firefox < 16 */
+  -ms-animation: fadein 1s; /* Internet Explorer */
+  -o-animation: fadein 1s; /* Opera < 12.1 */
+  animation: fadein 1s;
+}
+
+.btn-edit {
+  background: none;
+  border: none;
+  color: #2d2d2d;
+  font-size: 53px;
+}
+
+.btn-edit:hover {
+  color: rgb(76, 186, 120);
+}
+
+.btn-delete {
+  background: none;
+  border: none;
+  color: #fea3a3;
+  font-size: 36px;
+}
+
+.btn-delete:hover {
+  color: red;
+}
+
+.btn-hide {
+  background: none;
+  border: none;
+  color: #fea3a3;
+  min-width: 100%;
+  font-size: 18px;
+}
+
+.btn-hide:hover {
+  color: red;
+}
+
+#hide-delete {
+  /* color: rgb(111, 111, 111); */
+}
+#hide-delete:hover {
+  color: #f61f1f;
+}
+
+.btn-edit-ok {
+  background: none;
+  border: none;
+  color: #fea3a3;
+  font-size: 86px;
+  margin-left: 184px;
+}
+
+.btn-edit-ok:hover {
+  color: red;
+}
+
+.btn-viewHistory {
+  background: none;
+  border: none;
+  color: #de8521;
+  min-width: 100%;
+  font-size: 18px;
+  margin: 0 0 5px 0;
+}
+
+.btn-viewHistory:hover {
+  color: #626262;
+}
+
+.btn-panel {
+  margin-top: 10px;
+  position: absolute;
+  right: -7px;
+  top: 5px;
+  z-index: 1;
+}
+
+.btn-panel > button {
+  border: none;
+  background: none;
+  /* color: rgb(121, 121, 121); */
+  font-size: 31px;
+}
+
+.btn-panel > button:hover {
+  color: #f71f1f;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Internet Explorer */
+@-ms-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.body-container {
+  margin-top: 0vh;
+}
+
+@media only screen and (max-width: 768px) {
+  .body-container {
+    /* margin-top: -12vh; */
+  }
+
+  .btn-panel {
+    margin-top: 0px;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .body-container {
+    margin-top: 2vh;
+  }
+
+  .tile-container {
+    padding-top: 147px;
+  }
+}
+
+@media only screen and (max-width: 530px) {
+  .btn-panel {
+    margin-top: 0px;
+  }
+  .btn-panel > button {
+    font-size: 16px;
+  }
+}

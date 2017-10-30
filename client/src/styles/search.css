@@ -1,0 +1,58 @@
+.btn-close-modal {
+  border: none;
+  background: none;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: white;
+}
+
+.DayPickerInput-OverlayWrapper {
+  z-index: 10;
+}
+
+.DayPickerInput {
+  width: 100%;
+}
+
+.Modal {
+  position: absolute;
+  top: 15%;
+  left: 25%;
+  right: 25%;
+  bottom: 25%;
+  padding: 40px;
+  border: 1px solid rgb(204, 204, 204);
+  
+  background: rgba(0, 0, 0, 0.92);
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  z-index: 4000;
+}
+.Modal > .row > .col-md-12 > .text-center > .form-group > div > label {
+  color: white;
+}
+
+@media (max-width: 770px) {
+  .Modal {
+    top: 35%;
+    bottom: 12%;
+  }
+}
+
+@media (max-width: 600px) {
+  .Modal {
+    position: absolute;
+    top: 30%;
+    left: 2%;
+    right: 2%;
+    bottom: 1%;
+    border: 1px solid rgb(204, 204, 204);
+
+    overflow: auto;
+    border-radius: 4px;
+    outline: none;
+    padding: 40px;
+  }
+}

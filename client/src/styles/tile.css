@@ -1,0 +1,391 @@
+.tile-container {
+  width: 84%;
+  max-height: 100vh;
+  padding-left: 16%;
+  padding-top: 118px;
+}
+
+.tile {
+  background: rgba(255, 255, 255, 0.47);
+  margin-right: 25px;
+  margin-bottom: 14px;
+  width: 397px;
+  min-height: 400px;
+  margin: 1%;
+  color: #212121;
+  max-height: 400px;
+  overflow-y: auto;
+  -webkit-transition: all 0.5s ease;
+  -moz-transition: all 0.5s ease;
+  -o-transition: all 0.5s ease;
+  -ms-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  /* border-radius: 51px; */
+  box-shadow: 10px 10px 11px #877d7d;
+  overflow-y: hidden;
+  z-index: 0;
+}
+
+.tile:hover {
+  background: rgba(0, 0, 0, 0.48);
+  overflow-y: auto;
+  color: #dcdcdc;
+}
+
+.tile-hidden {
+  border: 2px solid #cc793c;
+  background: rgba(15, 15, 15, 0.77);
+  color: #d49c5e;
+}
+.tile-hidden:hover {
+  background: rgba(104, 65, 8, 0.34);
+  color: #522e07;
+}
+.tile-deleted {
+  border: 1px solid red;
+  background: rgba(15, 15, 15, 0.77);
+  color: #d86c6c;
+}
+.tile-deleted:hover {
+  background: rgba(67, 1, 1, 0.45);
+  color: #441616;
+}
+
+.tile-body {
+  font-size: 35px;
+  padding-top: 25%;
+}
+
+.span-hidden {
+  padding-top: 6%;
+  padding-right: 10%;
+  font-size: 42px;
+}
+
+.span-deleted {
+  padding-top: 6%;
+  padding-right: 10%;
+  font-size: 42px;
+}
+
+.plus {
+  padding-top: 8%;
+}
+
+.tile-plus {
+  font-size: 161px;
+  color: #212121;
+}
+
+.tile-plus:hover {
+  color: #dcdcdc;
+}
+
+.tile-logo {
+  font-size: 131px;
+}
+
+.tile-img {
+  padding-top: 5%;
+}
+
+.tileButton {
+  height: 150px;
+  width: 150px;
+  margin-right: 20px;
+}
+.tile-btn-panel {
+  margin-right: 20px;
+}
+
+.tile-text {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.tile-heading {
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  color: #860909;
+}
+
+.tile:hover > div > .row > .tile-text > .tile-heading {
+  color: white;
+}
+
+.tile-hidden > div > .row > .tile-text > .tile-heading {
+  color: #d49c5e;
+}
+
+.tile-hidden:hover > div > .row > .tile-text > .tile-heading {
+  color: #522e07;
+}
+
+.tile-deleted > div > .row > .tile-text > .tile-heading {
+  color: #d86c6c;
+}
+
+.tile-deleted:hover > div > .row > .tile-text > .tile-heading {
+  color: #441616;
+}
+
+/* 
+   Small add button is the button that is shown 
+   when the add tile is hidden for smaller screens 
+*/
+.small-add-button {
+  display: none;
+  position: fixed;
+  right: 20vh;
+  top: 8px;
+  z-index: 3;
+  background: #0000;
+  border: none;
+  color: #9a2f2f;
+}
+
+.small-add-button > button {
+  background: transparent;
+  border: none;
+  font-size: 24px;
+  outline: 0;
+}
+
+.small-add-button > button:hover {
+  color: #626262;
+}
+
+@media only screen and (max-height: 730px) {
+  .tile-img {
+    display: none;
+  }
+  .tile-divider {
+    display: none;
+  }
+  .tile-text {
+    padding-top: 23%;
+  }
+  .tile-body {
+    padding-top: 15%;
+  }
+}
+@media only screen and (max-width: 1900px) {
+  .tile {
+    width: 380px;
+  }
+}
+
+@media only screen and (max-width: 1800px) {
+  .tile {
+    width: 350px;
+  }
+}
+
+@media only screen and (max-width: 1680px) {
+  .tile {
+    width: 327px;
+    min-height: 327px;
+    max-height: 327px;
+  }
+}
+
+@media only screen and (max-width: 1570px) {
+  .tile {
+    width: 300px;
+    min-height: 300px;
+    max-height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1422px) {
+  .tile {
+    width: 45%;
+    min-height: 350px;
+    max-height: 350px;
+  }
+}
+
+@media only screen and (min-width: 1330px) {
+  .tile-container {
+    margin-left: 5%;
+  }
+  .tile-logo {
+    font-size: 140px;
+  }
+
+  .plus {
+    padding-top: 8%;
+  }
+
+  .tile-plus {
+    font-size: 141px;
+    padding-top: 0%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  .tile {
+    width: 550px;
+    min-height: 450px;
+    max-height: 450px;
+    margin-left: 12%;
+  }
+
+  .tile-container {
+    width: 96%;
+    max-height: 100vh;
+    padding-left: 9%;
+  }
+
+  .tile-add {
+    display: none;
+  }
+  .small-add-button {
+    right: 2vw;
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .tile-plus {
+    padding-top: 0%;
+    font-size: 141px;
+  }
+  .tile-container {
+    padding-top: 103px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .tile-container {
+    width: 84%;
+    padding-left: 7%;
+    padding-top: 150px;
+  }
+
+  .tile {
+    width: 82%;
+    min-height: 350px;
+    max-height: 350px;
+    margin-bottom: 22px;
+    margin-left: 12%;
+
+    padding-top: 8%;
+    overflow: hidden;
+  }
+
+  .tile:hover {
+    overflow-y: auto;
+  }
+
+  .tile-body {
+    padding-top: 8%;
+  }
+
+  .tile-logo {
+    font-size: 140px;
+  }
+
+  .tile-plus {
+    font-size: 141px;
+    padding-top: 14%;
+  }
+
+  .small-add-button {
+    right: 76px;
+    top: 8.5px;
+  }
+
+  .small-add-button > button {
+    background: #4a4a4a;
+    border: none;
+    font-size: 18.5px;
+    outline: 0;
+    width: 45px;
+    padding-left: 7px;
+    color: white;
+    padding-top: 1px;
+    border-radius: 5px;
+    height: 34px;
+  }
+  .tile-img {
+    padding-top: 0%;
+  }
+  .tile-text {
+    padding-top: 5%;
+  }
+
+  .span-deleted {
+    display: none;
+  }
+
+  .span-hidden {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 440px) {
+  .tile-container {
+    padding-top: 164px;
+    width: 99%;
+  }
+  .tile {
+    max-height: 250px;
+    min-height: 264px;
+    margin-left: 23px;
+    width: 294px;
+    overflow: hidden;
+    padding-top: 5%;
+    padding-bottom: 5%;
+  }
+  .tile:hover {
+    overflow-y: auto;
+  }
+
+  .tile-plus {
+    font-size: 141px;
+    padding-top: 24%;
+  }
+
+  .tile-img {
+    padding-top: 0%;
+  }
+  .tile-text {
+    padding-top: 5%;
+  }
+
+  .span-deleted {
+    display: none;
+  }
+
+  .span-hidden {
+    display: none;
+  }
+
+  .small-add-button {
+    right: 50px;
+    top: 6px;
+  }
+
+  .small-add-button > button {
+    background: #4a4a4a;
+    border: none;
+    font-size: 18.5px;
+    outline: 0;
+    width: 33px;
+    padding-left: 7px;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    height: 28px;
+  }
+}
+
+@media only screen and (max-width: 390px) {
+  .tile {
+    margin-left: 2%;
+  }
+  .tile-container {
+    padding-left: 1%;
+  }
+}

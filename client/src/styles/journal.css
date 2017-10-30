@@ -1,0 +1,22 @@
+.clear-search {
+  border: none;
+  background: none;
+  color: red;
+  position: absolute;
+  top: 111px;
+  right: 20px;
+  font-size: 68px;
+}
+
+@media (max-width: 770px) {
+  .clear-search {
+    top: 140px;
+  }
+}
+
+@media (max-width: 500px) {
+  .clear-search {
+    font-size: 48px;
+    right: 5px;
+  }
+}
